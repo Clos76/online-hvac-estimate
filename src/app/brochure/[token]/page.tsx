@@ -7,16 +7,13 @@ type Props = {
 };
 
 export default async function BrochureViewerPage(props: Props) {
-  const params = await props.params;
-  const { token } = params;
-
-  // Basic token validation (format check)
-  if (!token || token.length < 10) {
-    notFound();
-  }
-
-  // Use relative URL - works on any domain
-  const brochureUrl = `/api/brochure?token=${token}`;
-
-  return <BrochureViewer brochureUrl={brochureUrl} />;
+  // const params = await props.params;
+  // const { token } = params;
+  // // Basic token validation (format check)
+  // if (!token || token.length < 10) {
+  //   notFound();
+  // }
+  // // Use relative URL - works on any domain
+  // const brochureUrl = `/api/brochure?token=${token}`;
+  // return <BrochureViewer brochureUrl={brochureUrl} />;
 }
