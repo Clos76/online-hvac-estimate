@@ -1,35 +1,35 @@
-"use client";
-import React, { useState } from "react";
-import {
-  ChevronRight,
-  CheckCircle,
-  Home,
-  DollarSign,
-  Calendar,
-  Phone,
-  Mail,
-  User,
-  AlertCircle,
-  Loader2,
-} from "lucide-react";
-import { z } from "zod";
+// "use client";
+// import React, { useState } from "react";
+// import {
+//   ChevronRight,
+//   CheckCircle,
+//   Home,
+//   DollarSign,
+//   Calendar,
+//   Phone,
+//   Mail,
+//   User,
+//   AlertCircle,
+//   Loader2,
+// } from "lucide-react";
+// import { z } from "zod";
 
-// Zod schema for validation
-const LeadSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Invalid email address"),
-  phone: z
-    .string()
-    .optional()
-    .refine(
-      (val) => {
-        if (!val) return true; // optional
-        const cleaned = val.replace(/\D/g, "");
-        return cleaned.length >= 10 && cleaned.length <= 15;
-      },
-      { message: "Invalid phone number" },
-    ),
-});
+// // Zod schema for validation
+// const LeadSchema = z.object({
+//   name: z.string().min(2, "Name must be at least 2 characters"),
+//   email: z.string().email("Invalid email address"),
+//   phone: z
+//     .string()
+//     .optional()
+//     .refine(
+//       (val) => {
+//         if (!val) return true; // optional
+//         const cleaned = val.replace(/\D/g, "");
+//         return cleaned.length >= 10 && cleaned.length <= 15;
+//       },
+//       { message: "Invalid phone number" },
+//     ),
+// });
 
 export default function BajaHomeAssessment() {
   // const [step, setStep] = useState(0);

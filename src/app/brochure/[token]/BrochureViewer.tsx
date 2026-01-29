@@ -6,7 +6,7 @@ interface BrochureViewerProps {
 }
 
 export default function BrochureViewer({ brochureUrl }: BrochureViewerProps) {
-  return (
+  // return (
   //   <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
   //     {/* Header */}
   //     <header className="bg-gradient-to-r from-amber-500 to-orange-600 text-white py-6 px-4 shadow-lg">
@@ -19,7 +19,6 @@ export default function BrochureViewer({ brochureUrl }: BrochureViewerProps) {
   //         </p>
   //       </div>
   //     </header>
-
   //     {/* Main Content */}
   //     <main className="max-w-6xl mx-auto px-4 py-8">
   //       {/* Action Buttons */}
@@ -46,7 +45,6 @@ export default function BrochureViewer({ brochureUrl }: BrochureViewerProps) {
   //             </svg>
   //             Download PDF
   //           </a>
-
   //           <button
   //             onClick={() => window.print()}
   //             className="inline-flex items-center justify-center px-8 py-4 border-2 border-amber-600 text-amber-700 font-semibold rounded-lg hover:bg-amber-50 transition text-lg"
@@ -67,13 +65,11 @@ export default function BrochureViewer({ brochureUrl }: BrochureViewerProps) {
   //             Print
   //           </button>
   //         </div>
-
   //         <p className="text-center text-gray-600 mt-4 text-sm">
   //           💡 Use the controls inside the PDF viewer to zoom, navigate, and
   //           search
   //         </p>
   //       </div>
-
   //       {/* PDF Viewer */}
   //       <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
   //         <div className="bg-gray-100 px-6 py-4 border-b border-gray-200">
@@ -81,7 +77,6 @@ export default function BrochureViewer({ brochureUrl }: BrochureViewerProps) {
   //             📄 Baja Liberty Builders - Complete Home Building Guide
   //           </h2>
   //         </div>
-
   //         <div
   //           className="relative"
   //           style={{ height: "80vh", minHeight: "600px" }}
@@ -94,7 +89,6 @@ export default function BrochureViewer({ brochureUrl }: BrochureViewerProps) {
   //           />
   //         </div>
   //       </div>
-
   //       {/* Additional Info */}
   //       <div className="mt-8 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500">
   //         <h3 className="text-xl font-bold text-blue-900 mb-3">
@@ -113,7 +107,6 @@ export default function BrochureViewer({ brochureUrl }: BrochureViewerProps) {
   //           >
   //             📅 Schedule a Free Call
   //           </a>
-
   //           <a
   //             href="tel:+18587587768"
   //             className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
@@ -122,7 +115,6 @@ export default function BrochureViewer({ brochureUrl }: BrochureViewerProps) {
   //           </a>
   //         </div>
   //       </div>
-
   //       {/* Back to Home */}
   //       <div className="text-center mt-8">
   //         <a
@@ -146,7 +138,6 @@ export default function BrochureViewer({ brochureUrl }: BrochureViewerProps) {
   //         </a>
   //       </div>
   //     </main>
-
   //     {/* Footer */}
   //     <footer className="bg-gray-900 text-gray-400 py-8 px-4 mt-16">
   //       <div className="max-w-6xl mx-auto text-center">
@@ -181,5 +172,5 @@ export default function BrochureViewer({ brochureUrl }: BrochureViewerProps) {
   //       </div>
   //     </footer>
   //   </div>
-  );
+  // );
 }
